@@ -1,6 +1,7 @@
 @import "./reset.css";
 @import "./status-bar.css";
 @import "./header.css";
+@import "./nav-bar.css";
 
 @font-face {
   font-family: Kopub;
@@ -12,6 +13,10 @@
   src: url("./font/KoPubWorldBold.otf") format("opentype");
   font-weight: 750;
 }
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
   padding: 10px 20px;
