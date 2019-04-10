@@ -14,36 +14,38 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Chat | Kakao Clone</title>
   </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">13:54</span>
+  <body class="chats__body">
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">13:54</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="far fa-clock"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-volume-mute"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <i class="far fa-clock"></i>
-        <i class="fas fa-wifi"></i>
-        <i class="fas fa-volume-mute"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
+      <header class="header">
+        <div class="header__header-column">
+          <a href="index.html" class="header__back-btn">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <h1 class="header__title">Best Friend</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </header>
     </div>
-    <header class="header">
-      <div class="header__header-column">
-        <a href="index.html" class="header__back-btn">
-          <i class="fas fa-arrow-left"></i>
-        </a>
-        <h1 class="header__title">Best Friend</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-bars"></i>
-        </span>
-      </div>
-    </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">Friday, January 11, 2019</span>
         <li class="incoming-message message">
@@ -54,18 +56,36 @@
           />
           <div class="message__content">
             <span class="message__author">Best Friend</span>
-            <div class="message__bubble">
+            <span class="message__bubble">
               Congrats I love you!
-            </div>
+            </span>
           </div>
-          <span class="message__timestamp"></span>
+        </li>
+        <li class="sent-message message">
+          <div class="message__content">
+            <span class="message__bubble">
+              Thank you!
+            </span>
+          </div>
         </li>
         <li class="incoming-message message">
-          <span class="message__timestamp"></span>
+          <img
+            src="images/avatar.png"
+            class="m-avatar message__avatar"
+            alt=""
+          />
           <div class="message__content">
-            <div class="message__bubble">
+            <span class="message__author">Best Friend</span>
+            <span class="message__bubble">
+              Congrats I love you!
+            </span>
+          </div>
+        </li>
+        <li class="sent-message message">
+          <div class="message__content">
+            <span class="message__bubble">
               Thank you!
-            </div>
+            </span>
           </div>
         </li>
       </ul>
