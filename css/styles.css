@@ -8,6 +8,7 @@
 @import "./more.css";
 @import "./settings.css";
 @import "./chats.css";
+@import "./mobile.css";
 
 @font-face {
   font-family: Kopub;
