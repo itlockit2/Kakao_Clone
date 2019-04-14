@@ -1,4 +1,5 @@
 .nav {
+  transform: translateY(80px);
   position: fixed;
   width: 100%;
   padding: 20px 50px;
@@ -6,6 +7,16 @@
   bottom: 0px;
   left: 0px;
   border-top: 1px solid #f7f7f7f7;
+  animation: showNavBar 0.5s ease-out forwards;
+  animation-delay: 0.3s;
+}
+@keyframes showNavBar {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
 }
 .nav .nav__list {
   display: flex;
